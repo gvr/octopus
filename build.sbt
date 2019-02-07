@@ -2,7 +2,7 @@
 lazy val commonSettings = Seq(
   organization := "cen.alpha",
   version := "0.1",
-  scalaVersion := "2.12.6",
+  scalaVersion := "2.12.8",
   scalacOptions ++= Seq(
     "-encoding", "UTF-8",
     "-target:jvm-1.8",
@@ -44,9 +44,9 @@ lazy val octopus = (project in file("."))
   .settings(
     name := "octopus",
     libraryDependencies ++= {
-      val akkaActorVersion = "2.5.13"
-      val akkaStreamVersion = "2.5.13"
-      val akkaHttpVersion = "10.1.3"
+      val akkaActorVersion = "2.5.20"
+      val akkaStreamVersion = "2.5.20"
+      val akkaHttpVersion = "10.1.7"
       val configVersion = "1.3.3"
       val logbackVersion = "1.2.3"
       val scalaTestVersion = "3.0.5"
